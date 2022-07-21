@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .divc{
+      color:white;
+  }
+.container{
+    width: 100%;
+    height:  100vh;
+    font-family:sans-serif;
+    color:  rgb(46, 5, 99);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    #main{
+        width:100%;
+        height:100vh;
+    }
+    button {
+            --glow-color: rgb(154, 132, 175);
+            /*--glow-spread-color: rgba(108, 100, 116, 0.781);*/
+           --enhanced-glow-color: rgb(246, 244, 247);
+            --btn-color: rgb(184, 98, 176);
+            outline: none;
+            border: .1em solid var(--glow-color);
+            padding: 1em 3em;
+            color: var(--glow-color);
+            font-size: 25px;
+            font-weight: bold;
+            background-color: var(--btn-color);
+            border-radius: 1em;
+            outline: none;
+            box-shadow: 0 0 1em .25em var(--glow-color),
+                   0 0 4em 1em var(--glow-spread-color),
+                   inset 0 0 .75em .25em var(--glow-color);
+            text-shadow: 0 0 .5em var(--glow-color);
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 35%;
+            transition: all 0.3s;
+           }
+           
+           button::after {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--glow-spread-color);
+            filter: blur(2em);
+            opacity: .7;
+            transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+           }
+           
+           button:hover {
+            color: var(--btn-color);
+            background-color: var(--glow-color);
+            box-shadow: 0 0 1em .25em var(--glow-color),
+                   0 0 2em 2em var(--glow-spread-color),
+                   inset 0 0 .75em .25em var(--glow-color);
+           }
+           
+           button:active {
+            box-shadow: 0 0 0.6em .25em var(--glow-color),
+                   0 0 2.5em 2em var(--glow-spread-color),
+                   inset 0 0 .5em .25em var(--glow-color);
+           }
+           nav{
+            width:100%;
+            height:80px;
+            background-color:rgb(33, 4, 71);
+            line-height: 80px;
+            overflow: auto;
+           
+        }
+       
+        nav ul{
+            float: right;
+            margin-right: 30px;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.8s;
+        }
+        nav ul li:hover{
+            background-color:rgb(117, 117, 117);
+        }
+        nav ul li a{
+            text-decoration:rgb(203, 216, 215);
+            color: rgb(255, 255, 255);
+            padding: 30px;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10 10px;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Responsive columns */
+          @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px;
+            }
+          }
+          
+          /* Style the counter cards */
+          .card {
+            box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+          }
+          .column {
+            float: left;
+            width: 50%;
+            padding: 100px;
+          }
+          
+          .column img {
+            margin-top: 1px;
+          }
+        #backgroundimage {
+            background-image: url("i1.jfif");
+            width: 98.7vw;
+            height: 87.6vh; 
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            } 
+            #wrapper {
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+              }
+              
+              #textbox {
+                margin-top:50px;
+                background-color: lightgrey;
+                position: absolute;
+                width: 300px;
+                height: 400px;
+                opacity: 0.8;
+                top: -12px;
+                left: 35px;
+                text-align: center;
+                border: 2px solid white;
+              }
+              
+              #content {
+                padding: 100px 30px;
+              }
+
+.text{
+    min-height : 50px;
+    padding-bottom:10px; 
+    text-align: center;
+    color:black;
+    
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+}
+
+.column img {
+  margin-top: 1px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.brightness {
+    background-color: rgb(179, 243, 229);
+    display: inline-block;
+}
+.brightness img:hover {
+    opacity: .6;
+    
+}
+
+body{
+    background: #fcfcfc;
+}
+
+/*box model*/
+.boxx{
+     width:090%;
+     border: 3px solid white;
+     
+     box-sizing: border-box;
+     padding: 50px;
+     margin-left: 100px;
+     margin: 20px;
+     position: relative;
+     left: 50px;
+     background-color:rgb(210, 238, 236);
+}
+.box{
+    width:090%;
+    border: 3px solid white;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 50px;
+    margin-left: 100px;
+    margin: 20px;
+    position: relative;
+    left: 50px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .footer1{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(33, 4, 71);;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    
+}
