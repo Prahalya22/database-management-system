@@ -1,3 +1,3 @@
 # database-management-system
 
-idea incubation system
+Idea incubation system
